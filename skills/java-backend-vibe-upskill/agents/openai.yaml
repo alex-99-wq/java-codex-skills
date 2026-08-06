@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java Backend Vibe Upskill"
+  short_description: "Java后端模拟面试、复盘评估、题库卡片生成与间隔复习知识库沉淀"
+  default_prompt: "使用 $java-backend-vibe-upskill 开始一场 Java 后端模拟面试，并把结果沉淀为可复习的知识库。"
+policy:
+  allow_implicit_invocation: true

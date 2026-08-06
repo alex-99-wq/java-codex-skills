@@ -1,0 +1,7 @@
+interface:
+  display_name: "Java Architecture Analyzer"
+  short_description: "Java/Spring architecture, flow tracing, diagrams, and refactors"
+  default_prompt: "使用 $java-architecture-analyzer 按四阶段法分析当前 Java 项目的整体架构。"
+
+policy:
+  allow_implicit_invocation: true

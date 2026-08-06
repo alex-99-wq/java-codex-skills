@@ -1,0 +1,7 @@
+interface:
+  display_name: "Java Backend Engineering Mentor"
+  short_description: "Java backend design, coding practice, review, and drills"
+  default_prompt: "使用 $java-backend-engineering-mentor 带我做一个 Java 后端业务模块设计训练。"
+
+policy:
+  allow_implicit_invocation: true
