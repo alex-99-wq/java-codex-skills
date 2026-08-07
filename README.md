@@ -1,161 +1,259 @@
-# Java Codex Skills
+<h1 align="center">☕ Java Codex Skills</h1>
+<h3 align="center">Codex Skills for Java Backend Interviews, Spring Architecture Analysis, and Engineering Practice</h3>
+<h3 align="center">Mock interviews · Architecture walkthroughs · Engineering drills</h3>
 
-用于 Codex 的 Java 后端技能包集合，覆盖 Java 后端面试训练、Spring 项目架构分析、日常工程设计训练三类场景。
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="version">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="license">
+  <img src="https://img.shields.io/badge/platform-Codex-orange" alt="platform">
+  <img src="https://img.shields.io/badge/language-English%20%2F%20%E4%B8%AD%E6%96%87-brightgreen" alt="language">
+</p>
 
-## About
+<p align="center">
+  <a href="README_CN.md">中文版</a>
+</p>
 
-这个仓库适合想用 Codex 系统学习 Java 后端的人：既能做面试向的模拟拷打和复盘，也能读真实 Java/Spring 项目、梳理业务链路，还能做日常后端业务模块设计与工程训练。
+---
 
-当前包含 3 个 skill：
+## 1. Project Overview
 
-- `java-backend-vibe-upskill`：Java 后端面试训练、模拟面试、面试复盘、知识卡沉淀。
-- `java-architecture-analyzer`：Java/Spring 项目架构分析、业务链路梳理、时序图、设计模式提炼、重构方案。
-- `java-backend-engineering-mentor`：日常后端工程训练、业务模块设计、引导式编码、代码评审。
+### One-Liner
 
-## Directory
+**A collection of local Codex skills for learning, practicing, and explaining Java backend engineering.**
+
+This repository packages three Codex skills:
+
+| Skill | Purpose |
+|------|---------|
+| `java-backend-vibe-upskill` | Java backend mock interviews, interview review, scenario cards, and spaced review. |
+| `java-architecture-analyzer` | Read Java/Spring projects, map architecture, trace business flows, and generate diagrams. |
+| `java-backend-engineering-mentor` | Daily backend engineering drills, module design practice, guided implementation, and code review. |
+
+The goal is simple: use Codex not only to write code, but to turn real Java backend work into durable engineering ability.
+
+---
+
+## 2. Table of Contents
+
+| Section | Content |
+|---------|---------|
+| [1. Project Overview](#1-project-overview) | What this repository provides |
+| [2. Table of Contents](#2-table-of-contents) | This section |
+| [3. Quick Start](#3-quick-start) | Fast installation and first use |
+| [4. Core Skills](#4-core-skills) | What each skill does |
+| [5. Installation](#5-installation) | Manual install and update commands |
+| [6. Usage Examples](#6-usage-examples) | Common prompts |
+| [7. Project Structure](#7-project-structure) | Repository layout |
+| [8. License Compliance](#8-license-compliance) | MIT license notes and upstream notices |
+| [9. Acknowledgments](#9-acknowledgments) | Upstream projects and inspirations |
+
+---
+
+## 3. Quick Start
+
+### 3.1 Prerequisites
+
+| Requirement | Details |
+|-------------|---------|
+| Codex desktop or Codex CLI | A Codex environment that supports local skills. |
+| Git | Recommended for cloning and updating this repository. |
+| Java backend learning context | Optional, but useful: a resume, project directory, interview target, or codebase. |
+
+### 3.2 Install with Codex
+
+Send this to Codex:
 
 ```text
-skills/
-  java-backend-vibe-upskill/
-  java-architecture-analyzer/
-  java-backend-engineering-mentor/
+Help me install these Java Codex skills: https://github.com/alex-99-wq/java-codex-skills
 ```
 
-每个 skill 通常包含：
+Codex can clone the repository, copy the skill folders to your local Codex skills directory, and verify the installation.
 
-- `SKILL.md`：主说明、触发规则、工作流。
-- `references/`：按需加载的知识库、模板或详细执行说明。
-- `agents/`：可选 agent 配置。
-- `scripts/`：可选辅助脚本。
-
-## Install
-
-### 方法一：复制全部 skill
-
-在 PowerShell 中进入仓库目录，然后执行：
+### 3.3 Manual Install on Windows
 
 ```powershell
+git clone https://github.com/alex-99-wq/java-codex-skills.git
+cd java-codex-skills
+
 Copy-Item -Recurse .\skills\java-backend-vibe-upskill $env:USERPROFILE\.codex\skills\
 Copy-Item -Recurse .\skills\java-architecture-analyzer $env:USERPROFILE\.codex\skills\
 Copy-Item -Recurse .\skills\java-backend-engineering-mentor $env:USERPROFILE\.codex\skills\
 ```
 
-复制完成后，重启 Codex 或开启一个新任务，让 Codex 重新加载 skill 列表。
+After copying, restart Codex or open a new Codex task so the skill list reloads.
 
-### 方法二：只安装某一个 skill
+---
 
-如果只想安装面试训练 skill：
+## 4. Core Skills
+
+### 4.1 Java Backend Vibe Upskill
+
+Use this when you want interview-oriented Java backend practice.
+
+It supports:
+
+- Java backend mock interviews
+- Redis, JVM, Spring, MySQL, concurrency, and project-expression drilling
+- Interview replay and post-interview distillation
+- Scenario case building from real project experience
+- Interview cards and spaced review workflows
+
+Example:
+
+```text
+Use java-backend-vibe-upskill to run a Java backend mock interview for a new-grad role.
+```
+
+### 4.2 Java Architecture Analyzer
+
+Use this when you want to understand a Java/Spring project.
+
+It supports:
+
+- Spring Boot / Spring Cloud architecture analysis
+- Build file, configuration, and module boundary discovery
+- Business-flow tracing from Controller to Service, Mapper, Redis, DB, and MQ
+- Mermaid/SVG/HTML architecture and sequence diagrams
+- Design pattern extraction and refactoring plans
+
+Example:
+
+```text
+Use java-architecture-analyzer to analyze this Spring Boot project and trace the order creation flow.
+```
+
+### 4.3 Java Backend Engineering Mentor
+
+Use this when you want daily engineering practice instead of interview simulation.
+
+It supports:
+
+- Backend business module design training
+- Guided implementation practice
+- Enterprise-style code review
+- Daily backend drills
+- Database, cache, transaction, consistency, and performance reasoning
+
+Example:
+
+```text
+Use java-backend-engineering-mentor to design a coupon module with concurrency and consistency constraints.
+```
+
+---
+
+## 5. Installation
+
+### Install One Skill Only
 
 ```powershell
+# Interview training
 Copy-Item -Recurse .\skills\java-backend-vibe-upskill $env:USERPROFILE\.codex\skills\
-```
 
-如果只想安装项目架构分析 skill：
-
-```powershell
+# Architecture analysis
 Copy-Item -Recurse .\skills\java-architecture-analyzer $env:USERPROFILE\.codex\skills\
-```
 
-如果只想安装工程训练 skill：
-
-```powershell
+# Engineering mentoring
 Copy-Item -Recurse .\skills\java-backend-engineering-mentor $env:USERPROFILE\.codex\skills\
 ```
 
-## How To Use
-
-安装后，在 Codex 里直接用 skill 名称或自然语言描述目标即可触发。
-
-### Java 面试训练
-
-可以这样说：
-
-```text
-用 java-backend-vibe-upskill 帮我做一场 Java 后端模拟面试
-```
-
-也可以这样说：
-
-```text
-我想准备 Java 后端实习面试，重点拷打 Redis、JVM、Spring 和项目表达
-```
-
-适合场景：
-
-- Java 后端模拟面试
-- 八股和项目拷打
-- 面试复盘
-- 把真实项目经历沉淀成面试案例
-- 生成知识卡和复习计划
-
-### Java/Spring 架构分析
-
-可以这样说：
-
-```text
-用 java-architecture-analyzer 帮我分析这个 Spring Boot 项目的整体架构
-```
-
-也可以指定一条业务链路：
-
-```text
-帮我梳理用户下单链路，从 Controller 到 Service、Mapper、Redis、MQ 全部画出来
-```
-
-适合场景：
-
-- 看懂陌生 Java/Spring 项目
-- 分析模块边界和技术栈
-- 梳理登录、下单、支付、鉴权等业务流程
-- 画时序图和架构图
-- 提炼设计模式、高并发设计、重构方案
-
-### Java 后端工程训练
-
-可以这样说：
-
-```text
-用 java-backend-engineering-mentor 帮我做一个优惠券模块的业务设计训练
-```
-
-也可以这样说：
-
-```text
-给我一个今天的 Java 后端工程训练题，重点考并发一致性和数据库设计
-```
-
-适合场景：
-
-- 后端业务模块设计训练
-- 引导式编码练习
-- 企业级代码评审
-- 每日后端训练题
-- 数据库、缓存、事务、并发一致性训练
-
-## Update
-
-如果本仓库后续有更新，可以重新拉取并覆盖本地 skill：
+### Update Existing Install
 
 ```powershell
 git pull
+
 Copy-Item -Recurse -Force .\skills\java-backend-vibe-upskill $env:USERPROFILE\.codex\skills\
 Copy-Item -Recurse -Force .\skills\java-architecture-analyzer $env:USERPROFILE\.codex\skills\
 Copy-Item -Recurse -Force .\skills\java-backend-engineering-mentor $env:USERPROFILE\.codex\skills\
 ```
 
-## Acknowledgments
+---
 
-特别感谢 `java-backend-vibe-upskill` 的两个原始灵感与资源来源：
+## 6. Usage Examples
 
-- [Hazehacker/java-backend-interview-simulator](https://github.com/Hazehacker/java-backend-interview-simulator)：提供 Java 后端模拟面试相关资源与题库思路。
-- `vibe-upskill` 的原作者：提供从 Agent 开发过程提炼知识、生成面试卡片和持续复习的学习工作流。
+### Example 1: Mock Interview
 
-这个仓库中的 `java-backend-vibe-upskill` 是在上述两个工作的基础上，面向 Codex 本地 skill 机制做的整合与适配。
+```text
+I am preparing for a Java backend internship interview. Use java-backend-vibe-upskill to interview me on Redis, JVM, Spring, MySQL, and project explanation.
+```
 
-## Notes
+### Example 2: Project Architecture Walkthrough
 
-- 这些 skill 面向 Codex 的本地 skill 机制，不是普通 Java 依赖包。
-- `java-backend-vibe-upskill` 偏面试准备。
-- `java-architecture-analyzer` 偏真实项目阅读和架构理解。
-- `java-backend-engineering-mentor` 偏日常工程训练和代码实践。
-- 如果一个任务同时涉及多个 skill，建议先明确目标：面试表达、项目分析、还是工程训练。
+```text
+Use java-architecture-analyzer to read this Spring Cloud project, identify the modules, and write an architecture overview report.
+```
+
+### Example 3: Business Flow Tracing
+
+```text
+Trace the user login flow from Controller to Service, Redis, database, and token validation. Generate a sequence diagram.
+```
+
+### Example 4: Engineering Drill
+
+```text
+Give me a daily Java backend engineering drill about inventory deduction under high concurrency.
+```
+
+### Example 5: Code Review
+
+```text
+Use java-backend-engineering-mentor to review this service implementation from layering, transaction, cache, SQL, and concurrency perspectives.
+```
+
+---
+
+## 7. Project Structure
+
+```text
+java-codex-skills/
+├── README.md
+├── README_CN.md
+├── LICENSE
+├── THIRD_PARTY_NOTICES.md
+└── skills/
+    ├── java-backend-vibe-upskill/
+    │   ├── SKILL.md
+    │   ├── LICENSE
+    │   ├── agents/
+    │   ├── references/
+    │   └── scripts/
+    ├── java-architecture-analyzer/
+    │   ├── SKILL.md
+    │   ├── agents/
+    │   └── references/
+    └── java-backend-engineering-mentor/
+        ├── SKILL.md
+        ├── agents/
+        └── references/
+```
+
+---
+
+## 8. License Compliance
+
+This repository is released under the MIT License. See [LICENSE](LICENSE).
+
+Some materials are derived from or inspired by upstream MIT-licensed work. Their copyright and license notices are preserved in:
+
+- [skills/java-backend-vibe-upskill/LICENSE](skills/java-backend-vibe-upskill/LICENSE)
+- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+
+MIT compliance checklist:
+
+- Keep the original copyright notices.
+- Keep the MIT permission notice.
+- Include those notices in copies or substantial portions of the software.
+- Clearly credit adapted upstream work.
+
+---
+
+## 9. Acknowledgments
+
+Special thanks to:
+
+- [Hazehacker/java-backend-interview-simulator](https://github.com/Hazehacker/java-backend-interview-simulator), which provided the Java backend mock interview resource foundation.
+- [bb-cccc/vibe-upskill](https://github.com/bb-cccc/vibe-upskill), which provided the learning workflow for extracting real engineering skills from AI Agent conversations.
+
+`java-backend-vibe-upskill` adapts ideas from both sources into a Codex-local skill focused on Java backend interview readiness.
+
