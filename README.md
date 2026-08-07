@@ -143,6 +143,15 @@ Copy-Item -Recurse -Force .\skills\java-architecture-analyzer $env:USERPROFILE\.
 Copy-Item -Recurse -Force .\skills\java-backend-engineering-mentor $env:USERPROFILE\.codex\skills\
 ```
 
+## Acknowledgments
+
+特别感谢 `java-backend-vibe-upskill` 的两个原始灵感与资源来源：
+
+- [Hazehacker/java-backend-interview-simulator](https://github.com/Hazehacker/java-backend-interview-simulator)：提供 Java 后端模拟面试相关资源与题库思路。
+- `vibe-upskill` 的原作者：提供从 Agent 开发过程提炼知识、生成面试卡片和持续复习的学习工作流。
+
+这个仓库中的 `java-backend-vibe-upskill` 是在上述两个工作的基础上，面向 Codex 本地 skill 机制做的整合与适配。
+
 ## Notes
 
 - 这些 skill 面向 Codex 的本地 skill 机制，不是普通 Java 依赖包。
@@ -150,4 +159,3 @@ Copy-Item -Recurse -Force .\skills\java-backend-engineering-mentor $env:USERPROF
 - `java-architecture-analyzer` 偏真实项目阅读和架构理解。
 - `java-backend-engineering-mentor` 偏日常工程训练和代码实践。
 - 如果一个任务同时涉及多个 skill，建议先明确目标：面试表达、项目分析、还是工程训练。
-
